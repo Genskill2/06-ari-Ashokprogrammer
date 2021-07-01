@@ -29,6 +29,20 @@ charecters++;
 return charecters;
 }
 int nwords(string s,int len){
+int words=0;
+for(int i=0;i<len;i++){
+if(s[i]==' '){
+words++;
+}}return words;
+}
+int nsentences(string s,int len){
+
+
+
+
+
+
+
 int sentences=0;
 for(int i=0;i<len;i++){
 if (s[i]=='.'||s[i]=='?'||s[i]=='!'){
