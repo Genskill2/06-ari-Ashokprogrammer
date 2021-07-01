@@ -5,7 +5,7 @@
 #include <math.h>
 
 string ari(string);
-int ncharecters(string,int );
+int ncharacters(string,int );
 int nwords(string,int );
 int nsentences(string,int );
 string readability_index(int,int ,int);
@@ -13,20 +13,20 @@ string grade_level(int);
 string ari(string s){
 
  int l=strlen(s);
-int charecters=ncharecters(s,l);
+int characters=ncharacters(s,l);
 int words =nwords(s,l);
 int sentences=nsentences(s,l);
-string grade=readability_index(charecters,words,sentences);
+string grade=readability_index(characters,words,sentences);
 return grade;
 }
-int ncharecters(string s,int len){
-int charecters=0;
+int ncharacters(string s,int len){
+int characters=0;
 for (int i=0;i<len;i++){
 if(isalnum(s[i])){
-charecters++;
+characters++;
 }
 }
-return charecters;
+return characters;
 }
 int nwords(string s,int len){
 int words=0;
